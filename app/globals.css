@@ -1,4 +1,33 @@
-@import "tailwindcss";
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
+/* Semua bullets pagination */
+.swiper-pagination-bullet {
+  background-color: #b91c1c; /* Tailwind rose-600 */
+  opacity: 0.5; /* optional, untuk bullet yang tak active */
+}
+
+/* Bullet active */
+.swiper-pagination-bullet-active {
+  background-color: #b91c1c; /* Tailwind rose-600 */
+  opacity: 1;
+}
+
+
+/* contoh custom base */
+@layer base {
+  h1 {
+    font-weight: 700;
+  }
+}
+
 
 :root {
   --background: #ffffff;
